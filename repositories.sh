@@ -15,5 +15,5 @@ for REPO in ${REPOSITORIES[@]}; do
   else
     git clone $REPO $DIR
   fi
-  git -C $DIR reset --hard origin master
+  git -C $DIR checkout origin/master
 done
