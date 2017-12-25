@@ -1,22 +1,35 @@
-[{
-  "endpointSelector": {"matchLabels": {"app": "opengrok"}},
-  "ingress": [{
-    "toPorts": [{
-      "ports": [
-        {"port": "8080", "protocol": "TCP"}
-      ],
-      "rules": {
-        "HTTP": [
-          {
-            "method": "GET",
-            "path": "/source/$"
-          },
-          {
-            "method": "GET",
-            "path": "/favicon.ico"
-          }
-        ]
-      }
-    }]
-  }]
-}]
+[
+	{
+		"endpointSelector": {
+			"matchLabels": {
+				"app": "opengrok"
+			}
+		},
+		"ingress": [
+			{
+				"toPorts": [
+					{
+						"ports": [
+							{
+								"port": "8080",
+								"protocol": "TCP"
+							}
+						],
+						"rules": {
+							"HTTP": [
+								{
+									"method": "GET",
+									"path": "/source/$"
+								},
+								{
+									"method": "GET",
+									"path": "/favicon.ico"
+								}
+							]
+						}
+					}
+				]
+			}
+		]
+	}
+]
