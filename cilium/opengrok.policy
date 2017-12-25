@@ -19,7 +19,7 @@
 							"HTTP": [
 								{
 									"method": "GET",
-									"path": "/source/(.*)"
+									"path": "/source(.*)"
 								},
 								{
 									"method": "GET",
