@@ -1,0 +1,15 @@
+[{
+  "endpointSelector": {"matchLabels": {"app": "opengrok"}},
+  "ingress": [{
+    "toPorts": [{
+      "rules": {
+        "HTTP": [
+          {
+            "method": "GET",
+            "path": "/source$"
+          }
+        ]
+      }
+    }]
+  }]
+}]
