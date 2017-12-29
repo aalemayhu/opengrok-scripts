@@ -2,7 +2,7 @@ version: '2'
 services:
   cilium:
     container_name: cilium
-    image: cilium/cilium:stable
+    image: cilium/cilium:latest
     command: cilium-agent --kvstore consul --kvstore-opt consul.address=127.0.0.1:8500
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
@@ -18,7 +18,7 @@ services:
 
   cilium_docker:
     container_name: cilium-docker-plugin
-    image: cilium/cilium:stable
+    image: cilium/cilium:latest
     command: cilium-docker -D
     volumes:
       - /var/run/cilium:/var/run/cilium
