@@ -18,4 +18,7 @@ for REPO in ${REPOSITORIES[@]}; do
   git -C $DIR checkout origin/master
 done
 
+git fetch origin master
+git checkout origin/master
+
 docker exec opengrok OpenGrok index /src
