@@ -1,5 +1,5 @@
-cilium:
-	cd cilium && docker-compose up
+up:
+	docker-compose up
 
 sync:
 	./repositories.sh
