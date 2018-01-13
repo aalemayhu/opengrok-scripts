@@ -4,8 +4,8 @@ REPOSITORIES=(
 https://github.com/cilium/cilium
 git://git.kernel.org/pub/scm/linux/kernel/git/bpf/bpf-next.git
 git://git.kernel.org/pub/scm/linux/kernel/git/bpf/bpf.git
-git://git.kernel.org/pub/scm/linux/kernel/git/davem/net-next.git
-git://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git
+#git://git.kernel.org/pub/scm/linux/kernel/git/davem/net-next.git
+#git://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git
 )
 
 for REPO in ${REPOSITORIES[@]}; do
